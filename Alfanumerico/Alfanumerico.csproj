@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78D0B592-1D5C-4B10-B7E2-680BB868AE4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alfanumerico</RootNamespace>
+    <AssemblyName>Alfanumerico</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Alfanumerico.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Componentes">
+      <HintPath>..\Componentes\bin\Debug\Componentes.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TextBoxConFormato">
+      <HintPath>..\Librerias\TextBoxConFormato.dll</HintPath>
+    </Reference>
+    <Reference Include="WinControls.ListView">
+      <HintPath>..\Librerias\WinControls.ListView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador.Designer.cs">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Autenticarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Autenticarse.Designer.cs">
+      <DependentUpon>Autenticarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clasificacion_Uso_Resaltante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clasificacion_Uso_Resaltante.Designer.cs">
+      <DependentUpon>Clasificacion_Uso_Resaltante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clasificacion_Via.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clasificacion_Via.Designer.cs">
+      <DependentUpon>Clasificacion_Via.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Condicion_Limite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Condicion_Limite.Designer.cs">
+      <DependentUpon>Condicion_Limite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Condicion_Nombre_Via.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Condicion_Nombre_Via.Designer.cs">
+      <DependentUpon>Condicion_Nombre_Via.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Condicion_Numeracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Condicion_Numeracion.Designer.cs">
+      <DependentUpon>Condicion_Numeracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Base_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Base_Datos.Designer.cs">
+      <DependentUpon>Configuracion_Base_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Sistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Sistema.Designer.cs">
+      <DependentUpon>Configuracion_Sistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Supervisor_Tecnico_Catastral_Digitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Supervisor_Tecnico_Catastral_Digitacion.Designer.cs">
+      <DependentUpon>Configuracion_Supervisor_Tecnico_Catastral_Digitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Ubicacion_Geografica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Ubicacion_Geografica.Designer.cs">
+      <DependentUpon>Configuracion_Ubicacion_Geografica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estado_Conservacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estado_Conservacion.Designer.cs">
+      <DependentUpon>Estado_Conservacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estado_General_Via.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estado_General_Via.Designer.cs">
+      <DependentUpon>Estado_General_Via.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estado_Llenado_Ficha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estado_Llenado_Ficha.Designer.cs">
+      <DependentUpon>Estado_Llenado_Ficha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ficha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ficha.Designer.cs">
+      <DependentUpon>Ficha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Equipamiento_Urbano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Equipamiento_Urbano.Designer.cs">
+      <DependentUpon>Ficha_Catastral_Equipamiento_Urbano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Espacio_Recreacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Espacio_Recreacion.Designer.cs">
+      <DependentUpon>Ficha_Catastral_Espacio_Recreacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Especifica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Especifica.Designer.cs">
+      <DependentUpon>Ficha_Catastral_Especifica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Vias_Urbanas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Vias_Urbanas.Designer.cs">
+      <DependentUpon>Ficha_Catastral_Vias_Urbanas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Habilitacion_Urbana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Habilitacion_Urbana.Designer.cs">
+      <DependentUpon>Habilitacion_Urbana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Limite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Limite.Designer.cs">
+      <DependentUpon>Limite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Material.Designer.cs">
+      <DependentUpon>Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Material_Ficha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Material_Ficha.Designer.cs">
+      <DependentUpon>Material_Ficha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal.designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reporte.Designer.cs">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\SubFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\SubFicha.Designer.cs">
+      <DependentUpon>SubFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Componente_Urbano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Componente_Urbano.Designer.cs">
+      <DependentUpon>Tipo_Componente_Urbano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Equipamiento_Urbano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Equipamiento_Urbano.Designer.cs">
+      <DependentUpon>Tipo_Equipamiento_Urbano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Espacio_Recreacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Espacio_Recreacion.Designer.cs">
+      <DependentUpon>Tipo_Espacio_Recreacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Mobiliario_Urbano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Mobiliario_Urbano.Designer.cs">
+      <DependentUpon>Tipo_Mobiliario_Urbano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Puerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Puerta.Designer.cs">
+      <DependentUpon>Tipo_Puerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Uso_Resaltante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Uso_Resaltante.Designer.cs">
+      <DependentUpon>Tipo_Uso_Resaltante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Via.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Via.Designer.cs">
+      <DependentUpon>Tipo_Via.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usos.Designer.cs">
+      <DependentUpon>Usos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Uso_Codigo_General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Uso_Codigo_General.Designer.cs">
+      <DependentUpon>Uso_Codigo_General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Uso_Sub_Codigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Uso_Sub_Codigo.Designer.cs">
+      <DependentUpon>Uso_Sub_Codigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Vias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Vias.Designer.cs">
+      <DependentUpon>Vias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rpt\clasificacion_uso_resaltante.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clasificacion_uso_resaltante.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\clasificacion_via.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clasificacion_via.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\condicion_limite.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>condicion_limite.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\condicion_nombre_via.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>condicion_nombre_via.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\condicion_numeracion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>condicion_numeracion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\estado_conservacion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>estado_conservacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\estado_general_via.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>estado_general_via.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\estado_llenado_ficha.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>estado_llenado_ficha.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\ficha_catastral_equipamiento_urbano.cs">
+      <DependentUpon>ficha_catastral_equipamiento_urbano.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\ficha_catastral_espacio_recreacion.cs">
+      <DependentUpon>ficha_catastral_espacio_recreacion.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\ficha_catastral_especifica.cs">
+      <DependentUpon>ficha_catastral_especifica.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\ficha_catastral_vias_urbanas.cs">
+      <DependentUpon>ficha_catastral_vias_urbanas.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\habilitacion_urbana.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>habilitacion_urbana.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\limite.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>limite.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\material.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>material.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\material_ficha.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>material_ficha.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\personal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>personal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\tipo_componente_urbano.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tipo_componente_urbano.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\tipo_equipamiento_urbano.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tipo_equipamiento_urbano.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\tipo_espacio_recreacion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tipo_espacio_recreacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\tipo_mobiliario_urbano.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tipo_mobiliario_urbano.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\tipo_puerta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tipo_puerta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\tipo_uso_resaltante.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tipo_uso_resaltante.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\tipo_via.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tipo_via.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\usuario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>usuario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\vias.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Administrador.resx">
+      <DependentUpon>Administrador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Autenticarse.resx">
+      <DependentUpon>Autenticarse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clasificacion_Uso_Resaltante.resx">
+      <DependentUpon>Clasificacion_Uso_Resaltante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clasificacion_Via.resx">
+      <DependentUpon>Clasificacion_Via.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Condicion_Limite.resx">
+      <DependentUpon>Condicion_Limite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Condicion_Nombre_Via.resx">
+      <DependentUpon>Condicion_Nombre_Via.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Condicion_Numeracion.resx">
+      <DependentUpon>Condicion_Numeracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion_Base_Datos.resx">
+      <DependentUpon>Configuracion_Base_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion_Sistema.resx">
+      <DependentUpon>Configuracion_Sistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion_Supervisor_Tecnico_Catastral_Digitacion.resx">
+      <DependentUpon>Configuracion_Supervisor_Tecnico_Catastral_Digitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion_Ubicacion_Geografica.resx">
+      <DependentUpon>Configuracion_Ubicacion_Geografica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estado_Conservacion.resx">
+      <DependentUpon>Estado_Conservacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estado_General_Via.resx">
+      <DependentUpon>Estado_General_Via.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estado_Llenado_Ficha.resx">
+      <DependentUpon>Estado_Llenado_Ficha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ficha.resx">
+      <DependentUpon>Ficha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ficha_Catastral_Equipamiento_Urbano.resx">
+      <DependentUpon>Ficha_Catastral_Equipamiento_Urbano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ficha_Catastral_Espacio_Recreacion.resx">
+      <DependentUpon>Ficha_Catastral_Espacio_Recreacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ficha_Catastral_Especifica.resx">
+      <DependentUpon>Ficha_Catastral_Especifica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ficha_Catastral_Vias_Urbanas.resx">
+      <DependentUpon>Ficha_Catastral_Vias_Urbanas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Habilitacion_Urbana.resx">
+      <DependentUpon>Habilitacion_Urbana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Limite.resx">
+      <DependentUpon>Limite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Material.resx">
+      <DependentUpon>Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Material_Ficha.resx">
+      <DependentUpon>Material_Ficha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\SubFicha.resx">
+      <DependentUpon>SubFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Componente_Urbano.resx">
+      <DependentUpon>Tipo_Componente_Urbano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Equipamiento_Urbano.resx">
+      <DependentUpon>Tipo_Equipamiento_Urbano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Espacio_Recreacion.resx">
+      <DependentUpon>Tipo_Espacio_Recreacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Mobiliario_Urbano.resx">
+      <DependentUpon>Tipo_Mobiliario_Urbano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Puerta.resx">
+      <DependentUpon>Tipo_Puerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Uso_Resaltante.resx">
+      <DependentUpon>Tipo_Uso_Resaltante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo_Via.resx">
+      <DependentUpon>Tipo_Via.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usos.resx">
+      <DependentUpon>Usos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Vias.resx">
+      <DependentUpon>Vias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rpt\clasificacion_uso_resaltante.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>clasificacion_uso_resaltante.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\clasificacion_via.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>clasificacion_via.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\condicion_limite.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>condicion_limite.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\condicion_nombre_via.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>condicion_nombre_via.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\condicion_numeracion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>condicion_numeracion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\estado_conservacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>estado_conservacion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\estado_general_via.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>estado_general_via.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\estado_llenado_ficha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>estado_llenado_ficha.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ficha_catastral_equipamiento_urbano.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ficha_catastral_equipamiento_urbano.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ficha_catastral_espacio_recreacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ficha_catastral_espacio_recreacion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ficha_catastral_especifica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ficha_catastral_especifica.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ficha_catastral_vias_urbanas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ficha_catastral_vias_urbanas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\habilitacion_urbana.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>habilitacion_urbana.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\limite.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>limite.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\material.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>material.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\material_ficha.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>material_ficha.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\personal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>personal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\tipo_componente_urbano.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tipo_componente_urbano.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\tipo_equipamiento_urbano.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tipo_equipamiento_urbano.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\tipo_espacio_recreacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tipo_espacio_recreacion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\tipo_mobiliario_urbano.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tipo_mobiliario_urbano.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\tipo_puerta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tipo_puerta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\tipo_uso_resaltante.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tipo_uso_resaltante.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\tipo_via.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tipo_via.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\usuario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>usuario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\vias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>vias.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Diagrama de Clases.cd" />
+    <None Include="Manuales\m01.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manuales\m02.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manuales\m03.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manuales\m04.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manuales\m05.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Manuales\m06.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="casa.ico" />
+    <Content Include="Img\alan.jpg" />
+    <Content Include="Img\actualizar.png" />
+    <Content Include="Img\bancomundial.gif" />
+    <Content Include="Img\calca.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\casa.ico" />
+    <Content Include="Img\chinchero.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\copesco.jpg" />
+    <Content Include="Img\eliana.jpg" />
+    <Content Include="Img\ficha.ico" />
+    <Content Include="Img\fondo.png" />
+    <Content Include="Img\guaman.png" />
+    <Content Include="Img\ivan.jpg" />
+    <Content Include="Img\llave.ico" />
+    <Content Include="Img\maziel.jpg" />
+    <Content Include="Img\ollantaytambo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\perfil.ico" />
+    <Content Include="Img\pisac.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\regioncusco.jpg" />
+    <Content Include="Img\santateresa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\urubamba.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\usuarios.png" />
+    <Content Include="Img\vilcanota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

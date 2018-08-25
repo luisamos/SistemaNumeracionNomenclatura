@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0AEFB47C-5900-4BCE-9B16-02E797D2F8C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Geografico</RootNamespace>
+    <AssemblyName>Geografico</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Geografico.XML</DocumentationFile>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Geografico.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Geografico.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Geografico.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="acdbmgd">
+      <HintPath>C:\Program Files\AutoCAD Map 3D 2010\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>C:\Program Files\AutoCAD Map 3D 2010\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop, Version=18.0.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Autodesk.AutoCAD.Interop\18.0.0.0__eed84259d7cbf30b\Autodesk.AutoCAD.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common, Version=18.0.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Autodesk.AutoCAD.Interop.Common\18.0.0.0__eed84259d7cbf30b\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Map.Platform">
+      <HintPath>..\..\..\..\..\..\..\Program Files\AutoCAD Map 3D 2010\Autodesk.Map.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Componentes">
+      <HintPath>..\Componentes\bin\Debug\Componentes.dll</HintPath>
+    </Reference>
+    <Reference Include="OSGeo.FDO">
+      <HintPath>..\..\..\..\..\..\..\Program Files\AutoCAD Map 3D 2010\FDO\bin\OSGeo.FDO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TextBoxConFormato">
+      <HintPath>..\Librerias\TextBoxConFormato.dll</HintPath>
+    </Reference>
+    <Reference Include="WinControls.ListView">
+      <HintPath>..\Librerias\WinControls.ListView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\cAuto_Cad_Map.cs" />
+    <Compile Include="Formularios\Autenticarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Autenticarse.designer.cs">
+      <DependentUpon>Autenticarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cargar_Manzanas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargar_Manzanas.Designer.cs">
+      <DependentUpon>Cargar_Manzanas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cargar_Sectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargar_Sectores.Designer.cs">
+      <DependentUpon>Cargar_Sectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Modulo_Componente_Urbano_Mobiliario_Urbano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Modulo_Componente_Urbano_Mobiliario_Urbano.Designer.cs">
+      <DependentUpon>Modulo_Componente_Urbano_Mobiliario_Urbano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Modulo_Usos_Resaltante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Modulo_Usos_Resaltante.Designer.cs">
+      <DependentUpon>Modulo_Usos_Resaltante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reporte_Certificado_Numeracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reporte_Certificado_Numeracion.Designer.cs">
+      <DependentUpon>Reporte_Certificado_Numeracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Servidor_Base_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Servidor_Base_Datos.Designer.cs">
+      <DependentUpon>Configuracion_Servidor_Base_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Ubicacion_Geografica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Ubicacion_Geografica.designer.cs">
+      <DependentUpon>Configuracion_Ubicacion_Geografica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cargar_Vias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargar_Vias.Designer.cs">
+      <DependentUpon>Cargar_Vias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Servidor_Web.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion_Servidor_Web.Designer.cs">
+      <DependentUpon>Configuracion_Servidor_Web.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Detalles_Certificado_Numeracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Detalles_Certificado_Numeracion.Designer.cs">
+      <DependentUpon>Detalles_Certificado_Numeracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Equipamiento_Urbano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Equipamiento_Urbano.designer.cs">
+      <DependentUpon>Ficha_Catastral_Equipamiento_Urbano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Equipamiento_Urbano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Equipamiento_Urbano.Designer.cs">
+      <DependentUpon>Equipamiento_Urbano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Detalles_Manzana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Detalles_Manzana.designer.cs">
+      <DependentUpon>Detalles_Manzana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Detalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Detalles.designer.cs">
+      <DependentUpon>Detalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Vias_Urbanas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ficha_Catastral_Vias_Urbanas.designer.cs">
+      <DependentUpon>Ficha_Catastral_Vias_Urbanas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Fondo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Fondo.designer.cs">
+      <DependentUpon>Fondo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Modulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Modulo.Designer.cs">
+      <DependentUpon>Modulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Uso_Resaltante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Uso_Resaltante.Designer.cs">
+      <DependentUpon>Uso_Resaltante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Vias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Vias.Designer.cs">
+      <DependentUpon>Vias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Puerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Puerta.Designer.cs">
+      <DependentUpon>Puerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\Autenticarse.resx">
+      <DependentUpon>Autenticarse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargar_Manzanas.resx">
+      <DependentUpon>Cargar_Manzanas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargar_Sectores.resx">
+      <DependentUpon>Cargar_Sectores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Modulo_Componente_Urbano_Mobiliario_Urbano.resx">
+      <DependentUpon>Modulo_Componente_Urbano_Mobiliario_Urbano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Modulo_Usos_Resaltante.resx">
+      <DependentUpon>Modulo_Usos_Resaltante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reporte_Certificado_Numeracion.resx">
+      <DependentUpon>Reporte_Certificado_Numeracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion_Servidor_Base_Datos.resx">
+      <DependentUpon>Configuracion_Servidor_Base_Datos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion_Ubicacion_Geografica.resx">
+      <DependentUpon>Configuracion_Ubicacion_Geografica.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargar_Vias.resx">
+      <DependentUpon>Cargar_Vias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion_Servidor_Web.resx">
+      <DependentUpon>Configuracion_Servidor_Web.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Detalles_Certificado_Numeracion.resx">
+      <DependentUpon>Detalles_Certificado_Numeracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ficha_Catastral_Equipamiento_Urbano.resx">
+      <DependentUpon>Ficha_Catastral_Equipamiento_Urbano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Equipamiento_Urbano.resx">
+      <DependentUpon>Equipamiento_Urbano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Detalles_Manzana.resx">
+      <DependentUpon>Detalles_Manzana.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Detalles.resx">
+      <DependentUpon>Detalles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ficha_Catastral_Vias_Urbanas.resx">
+      <DependentUpon>Ficha_Catastral_Vias_Urbanas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Fondo.resx">
+      <DependentUpon>Fondo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Modulo.resx">
+      <DependentUpon>Modulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Uso_Resaltante.resx">
+      <DependentUpon>Uso_Resaltante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Vias.resx">
+      <DependentUpon>Vias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Puerta.resx">
+      <DependentUpon>Puerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\buscar_sector.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\buscar_usos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_manzana.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\buscar_manzana.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_usos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_vias.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\buscar_vias.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_puerta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\buscar_puerta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_equipamiento_urbano.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\buscar_equipamiento_urbano.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_componente_urbano.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_mobiliario_urbano.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_mobiliario_urbano.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_componente_urbano.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_equipamiento_urbano.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_puerta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_usos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_vias.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_manzana.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\ubicacion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\datos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\cargar_sector.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\seleccionar_sector.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="query.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="temp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_TIPO_COMPONENTE_URBANO.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Xml\CAPA_DEPARTAMENTO.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_FICHA_VIAS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_MANZANA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_TIPO_MOBILIARIO_URBANO.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_PROVINCIA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_SECTOR.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_TIPO_VIAS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_USO_RESALTANTE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_VIAS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_PUERTA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_EQUIPAMIENTO_URBANO.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Diagrama de Clases.cd" />
+    <None Include="Dwg\Electric.dwg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dwg\Semaforo.dwg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\urubamba.jpg" />
+    <None Include="Resources\calca.jpg" />
+    <None Include="Resources\chinchero.jpg" />
+    <None Include="Resources\ollantaytambo.jpg" />
+    <None Include="Resources\pisac.jpg" />
+    <None Include="Resources\santateresa.jpg" />
+    <Content Include="Xml\CAPA_DISTRITO.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_LOTES.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_UBICACION_MANZANA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_UBICACION_SECTOR.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\ACCESO.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\CAPA_UBICACION_VIAS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Dwg\Arbol.dwg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dwg\North.dwg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dwg\Points.dwg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dwg\Telefono.dwg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dwg\Water.dwg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

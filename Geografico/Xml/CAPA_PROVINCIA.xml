@@ -1,0 +1,45 @@
+<LayerDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LayerDefinition-1.3.0.xsd" version="1.3.0">
+  <VectorLayerDefinition>
+    <ResourceId>Library://SqlServerSpatial.FeatureSource</ResourceId>
+    <FeatureName>dbo:PROVINCIA</FeatureName>
+    <FeatureNameType>FeatureClass</FeatureNameType>
+    <Filter></Filter>
+    <Geometry>GEOM</Geometry>
+    <VectorScaleRange>
+      <LineTypeStyle>
+        <LineRule>
+          <LegendLabel></LegendLabel>
+        </LineRule>
+        <ShowInLegend>false</ShowInLegend>
+      </LineTypeStyle>
+      <AreaTypeStyle>
+        <AreaRule>
+          <LegendLabel>LIMITE PROVINCIAL</LegendLabel>
+          <AreaSymbolization2D>
+            <Fill>
+              <FillPattern>Solid</FillPattern>
+              <ForegroundColor>00ACD372</ForegroundColor>
+              <BackgroundColor>FF000000</BackgroundColor>
+            </Fill>
+            <Stroke>
+              <LineStyle>Solid</LineStyle>
+              <Thickness>0.0</Thickness>
+              <Color>FFF0F0F0</Color>
+              <Unit>Centimeters</Unit>
+              <SizeContext>DeviceUnits</SizeContext>
+            </Stroke>
+          </AreaSymbolization2D>
+        </AreaRule>
+        <ShowInLegend>true</ShowInLegend>
+      </AreaTypeStyle>
+      <PointTypeStyle>
+        <DisplayAsText>false</DisplayAsText>
+        <AllowOverpost>false</AllowOverpost>
+        <PointRule>
+          <LegendLabel></LegendLabel>
+        </PointRule>
+        <ShowInLegend>false</ShowInLegend>
+      </PointTypeStyle>
+    </VectorScaleRange>
+  </VectorLayerDefinition>
+</LayerDefinition>

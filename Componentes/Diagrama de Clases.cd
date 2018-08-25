@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Componentes.cClasificacion_Uso_Resaltante" HideInheritanceLine="true">
+    <Position X="18.25" Y="2.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABAgAAAAIAABEAgAAAgAAAIIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cClasificacion_Uso_Resaltante.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipo_Uso_Resaltante" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cClasificacion_Via" HideInheritanceLine="true">
+    <Position X="25.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cClasificacion_Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cCondicion_Limite" HideInheritanceLine="true">
+    <Position X="21.75" Y="12" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cCondicion_Limite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cCondicion_Nombre_Via" HideInheritanceLine="true">
+    <Position X="25.25" Y="18.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cCondicion_Nombre_Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cCondicion_Numeracion" HideInheritanceLine="true">
+    <Position X="7.25" Y="21.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cCondicion_Numeracion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cConexion" HideInheritanceLine="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIABBAAAwAQAAAAAIgAEAAAAAAAAAAQCoAAEKAAAQgI=</HashCode>
+      <FileName>cConexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cConfiguracion">
+    <Position X="38" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAABAIAgAEAACQAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>cConfiguracion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cEstado_Conservacion">
+    <Position X="30.5" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cEstado_Conservacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cEstado_General_Via" HideInheritanceLine="true">
+    <Position X="24.5" Y="22" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cEstado_General_Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cEstado_Llenado_Ficha" HideInheritanceLine="true">
+    <Position X="16.5" Y="8" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cEstado_Llenado_Ficha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cFicha">
+    <Position X="12.25" Y="7" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>SBACIAAAACYAAASuEAQIGgAECDAQQAAQAgAQAEAQAAA=</HashCode>
+      <FileName>cFicha.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Estado_Llenado_Ficha" />
+      <Property Name="Supervisor" />
+      <Property Name="Tecnico_Catastral" />
+      <Property Name="Digitacion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Equipamiento_Urbano">
+    <Position X="10.75" Y="11.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIAIzAAQSkxINEJEAihACAAAQAAALAgAAACIAACAgAQ=</HashCode>
+      <FileName>cFicha_Catastral_Equipamiento_Urbano.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipo_Equipamiento_Urbano" />
+      <Property Name="Habilitacion_Urbana" />
+      <Property Name="Usos" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Equipamiento_Urbano_Fotografia" HideInheritanceLine="true">
+    <Position X="2.5" Y="21.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAACAAAAAACAAAAAA=</HashCode>
+      <FileName>cFicha_Catastral_Equipamiento_Urbano_Fotografia.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ficha_Catastral_Equipamiento_Urbano" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Equipamiento_Urbano_Ubicacion" HideInheritanceLine="true">
+    <Position X="6.5" Y="18.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAAAAAAAAAAAAAAAoBAAACAQAACACAAAAAA=</HashCode>
+      <FileName>cFicha_Catastral_Equipamiento_Urbano_Ubicacion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ficha_Catastral_Equipamiento_Urbano" />
+      <Property Name="Tipo_Puerta" />
+      <Property Name="Condicion_Numeracion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Espacio_Recreacion">
+    <Position X="7.25" Y="11.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEQIwAAUSEAKNEBEgwAAAIIAAAAABAgAAABIAABAwAQ=</HashCode>
+      <FileName>cFicha_Catastral_Espacio_Recreacion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Habilitacion_Urbana" />
+      <Property Name="Tipo_Espacio_Recreacion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Especifica">
+    <Position X="14.5" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>cFicha_Catastral_Especifica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Vias_Urbanas">
+    <Position X="17.25" Y="11.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>kBpepeTEva4JbVBEbxyBg0XKv9GvLBEQlcCQQQYAiwU=</HashCode>
+      <FileName>cFicha_Catastral_Vias_Urbanas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Vias" />
+      <Property Name="Estado_General_Via" />
+      <Property Name="Limite" />
+      <Property Name="Condicion_Limite" />
+      <Property Name="Habilitacion_Urbana" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Vias_Urbanas_Componente_Urbano" HideInheritanceLine="true">
+    <Position X="25.75" Y="4" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAACCAAAAAAAABAAAAAAAQAAAAAAAAABAA=</HashCode>
+      <FileName>cFicha_Catastral_Vias_Urbanas_Componente_Urbano.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ficha_Catrastral_Vias_Urbanas" />
+      <Property Name="Tipo_Componente_Urbano" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Vias_Urbanas_Fotografia" HideInheritanceLine="true">
+    <Position X="27.25" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>cFicha_Catastral_Vias_Urbanas_Fotografia.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ficha_Catastral_Vias_Urbanas" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Vias_Urbanas_Mobiliario_Urbano" HideInheritanceLine="true">
+    <Position X="17" Y="20" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAACCAAAAAAAABAAAAABAAAAAAAAAAEAAA=</HashCode>
+      <FileName>cFicha_Catastral_Vias_Urbanas_Mobiliario_Urbano.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ficha_Catrastral_Vias_Urbanas" />
+      <Property Name="Tipo_Mobiliario_Urbano" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.cHabilitacion_Urbana" HideInheritanceLine="true">
+    <Position X="15.25" Y="15.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAgAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cHabilitacion_Urbana.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cLimite" HideInheritanceLine="true">
+    <Position X="10" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cLimite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cMaterial">
+    <Position X="26.75" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cMaterial_Componente_Urbano_Mobiliario_Urbano">
+    <Position X="33.5" Y="9.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cMaterial_Componente_Urbano_Mobiliario_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cPersonal" HideInheritanceLine="true">
+    <Position X="3.25" Y="9.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACEAAFgAAIAALEAAAAgAAAAAEACAABAAAAAQAIBAQ=</HashCode>
+      <FileName>cPersonal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cSector_Manzana_Lotes">
+    <Position X="21" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAABADAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>cSector_Manzana_Lotes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cSubFicha">
+    <Position X="31.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cSubFicha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cTipo_Componente_Urbano" HideInheritanceLine="true">
+    <Position X="26.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cTipo_Componente_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cTipo_Equipamiento_Urbano" HideInheritanceLine="true">
+    <Position X="11" Y="22.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAgAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cTipo_Equipamiento_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cTipo_Espacio_Recreacion" HideInheritanceLine="true">
+    <Position X="0.5" Y="13.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cTipo_Espacio_Recreacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cTipo_Mobiliario_Urbano" HideInheritanceLine="true">
+    <Position X="17.75" Y="23.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cTipo_Mobiliario_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cTipo_Puerta" HideInheritanceLine="true">
+    <Position X="3.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cTipo_Puerta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cTipo_Uso_Resaltante" HideInheritanceLine="true">
+    <Position X="14.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAgAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cTipo_Uso_Resaltante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cTipo_Vias" HideInheritanceLine="true">
+    <Position X="21.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAABEAAAAAAAAAAIAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cTipo_Vias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cUbicacion_Geografica" HideInheritanceLine="true">
+    <Position X="18.25" Y="15.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIACAAICAAgAAABAAAAAgAAEAAIAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>cUbicacion_Geografica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cUsos" HideInheritanceLine="true">
+    <Position X="14.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAABAAAAAAgAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cUsos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cUsuario">
+    <Position X="24.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAJAAIIAJEACACAQAAEAMAABAAAAEQAAgBFAQ=</HashCode>
+      <FileName>cUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.cVias" HideInheritanceLine="true">
+    <Position X="21.5" Y="15" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACUABBgEBAAYAAJEAAECBgAAAAIAAAAAAAEAAAgIAAQ=</HashCode>
+      <FileName>cVias.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipo_Via" />
+      <Property Name="Condicion_Nombre_Via" />
+      <Property Name="Clasificacion_Via" />
+      <Property Name="Ubicacion_Geografica" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Componentes.sqlServer">
+    <Position X="5.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEIACAAAAAkAAACACGAAAQAgAAAAQIEAAiAAAAAE=</HashCode>
+      <FileName>sqlServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Componentes.sqlServerException">
+    <Position X="9.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sqlServerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.ApplicationException" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Componentes.cFicha_Catastral_Especifica_Uso_Resaltante" HideInheritanceLine="true">
+    <Position X="13.5" Y="4.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAMAAAAAEIAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cFicha_Catastral_Especifica_Uso_Resaltante.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Clasificacion_uso_resaltante" />
+      <Property Name="Tipo_uso_resaltante" />
+      <Property Name="Ficha_catastral_especifica" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

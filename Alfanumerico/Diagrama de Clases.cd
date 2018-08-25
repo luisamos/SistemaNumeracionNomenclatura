@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Formularios.Autenticarse">
+    <Position X="56.25" Y="17" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IgBAQAACACAAABoAAADAAAADAAQAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Formularios\Autenticarse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Ayuda">
+    <Position X="49" Y="24" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAMAAAAAAACAAAAAAADA=</HashCode>
+      <FileName>Formularios\Ayuda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Clasificacion_Uso_Resaltante">
+    <Position X="22.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAiAIARBEAACoKhECAABAAAAAAAAAKAAACAQ=</HashCode>
+      <FileName>Formularios\Clasificacion_Uso_Resaltante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Clasificacion_Via">
+    <Position X="41.75" Y="15.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Clasificacion_Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Condicion_Limite">
+    <Position X="32.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Condicion_Limite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Condicion_Nombre_Via">
+    <Position X="36.75" Y="15.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Condicion_Nombre_Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Condicion_Numeracion">
+    <Position X="29" Y="15.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Condicion_Numeracion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Configuracion_Base_Datos">
+    <Position X="54.5" Y="24" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAABACARABIABACAAACCAAQAAAAAAABAgEAAAAA=</HashCode>
+      <FileName>Formularios\Configuracion_Base_Datos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Configuracion_Sistema">
+    <Position X="46.25" Y="24" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AggAAAAAQCAAABAAAACBAAACAAAAAAEACgAAAEQQAAA=</HashCode>
+      <FileName>Formularios\Configuracion_Sistema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Configuracion_Supervisor_Tecnico_Catastral_Digitacion">
+    <Position X="53.25" Y="10.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AwAAAAAAACIAARAAAACSAAACAAAAAAAAAAAAAEAAEgA=</HashCode>
+      <FileName>Formularios\Configuracion_Supervisor_Tecnico_Catastral_Digitacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Configuracion_Ubicacion_Geografica">
+    <Position X="46.25" Y="16.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAQACACMBAAAACBAAACAADAAEAAAggAAECAAAA=</HashCode>
+      <FileName>Formularios\Configuracion_Ubicacion_Geografica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Estado_Conservacion">
+    <Position X="24.75" Y="15.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Estado_Conservacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Estado_General_Via">
+    <Position X="22" Y="18.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Estado_General_Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Estado_Llenado_Ficha">
+    <Position X="20" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Estado_Llenado_Ficha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Ficha">
+    <Position X="12.25" Y="9" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RgCCFlAFAqCDCjQMIAKAKCgiQwAQQEUA+BAP/wAMQAg=</HashCode>
+      <FileName>Formularios\Ficha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Ficha_Catastral_Equipamiento_Urbano">
+    <Position X="13.75" Y="15" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>//O76ElPDi+qXHDPZX3dKtdr4X3U+OU6Kk1+oHj/+b4=</HashCode>
+      <FileName>Formularios\Ficha_Catastral_Equipamiento_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Ficha_Catastral_Espacio_Recreacion">
+    <Position X="17.75" Y="15" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>//P/3P/vHza/1Prd5f//vv//f9aH9//+N3nu7nr///U=</HashCode>
+      <FileName>Formularios\Ficha_Catastral_Espacio_Recreacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Ficha_Catastral_Especifica">
+    <Position X="10.75" Y="15" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>/0GoGmJHjjiMUbRuazmNPrEzYPAEfuISYmgByXj32zc=</HashCode>
+      <FileName>Formularios\Ficha_Catastral_Especifica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Ficha_Catastral_Vias_Urbanas">
+    <Position X="7.75" Y="15" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>//P/3/z93Tqvf/7d7b//////7V/V9///u2ms+fv//f8=</HashCode>
+      <FileName>Formularios\Ficha_Catastral_Vias_Urbanas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Habilitacion_Urbana">
+    <Position X="22.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Habilitacion_Urbana.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Limite">
+    <Position X="30" Y="9.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Limite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Material">
+    <Position X="34" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Material_Ficha">
+    <Position X="39.25" Y="15.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Material_Ficha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Personal">
+    <Position X="26.75" Y="15.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIgBBEAACIKhECAAAAAAAAACAAIAAACAQ=</HashCode>
+      <FileName>Formularios\Personal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Principal">
+    <Position X="59.25" Y="3.25" Width="5" />
+    <TypeIdentifier>
+      <HashCode>ClAikA0CHWFIYfXCAiLSBu/SigWBRyWB7pA0yBPtf2Q=</HashCode>
+      <FileName>Formularios\Principal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Reporte">
+    <Position X="51.5" Y="24" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Formularios\Reporte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.SubFicha">
+    <Position X="26.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>BACCFkAFAqCBCjSMgoCAKCwCQQAQAQSg+BAP/wAcACg=</HashCode>
+      <FileName>Formularios\SubFicha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Tipo_Componente_Urbano">
+    <Position X="19.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Tipo_Componente_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Tipo_Equipamiento_Urbano">
+    <Position X="39.5" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Tipo_Equipamiento_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Tipo_Espacio_Recreacion">
+    <Position X="31.5" Y="15.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Tipo_Espacio_Recreacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Tipo_Mobiliario_Urbano">
+    <Position X="34" Y="15.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Tipo_Mobiliario_Urbano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Tipo_Puerta">
+    <Position X="24.75" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Tipo_Puerta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Tipo_Uso_Resaltante">
+    <Position X="30.25" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Tipo_Uso_Resaltante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Tipo_Via">
+    <Position X="32" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAIAABEAACIKhECAAAAAAAAAAAAAAAACAQ=</HashCode>
+      <FileName>Formularios\Tipo_Via.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.Vias">
+    <Position X="36" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>sAAABECQBCEIgBBEAACIKhECSIBgIBAAAAAAIAAAjQQ=</HashCode>
+      <FileName>Formularios\Vias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="51.75" Y="22" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

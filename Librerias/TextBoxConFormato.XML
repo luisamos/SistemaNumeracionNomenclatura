@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TextBoxConFormato</name>
+    </assembly>
+    <members>
+        <member name="T:TextBoxConFormato.tbFormats">
+            <summary>
+            Listado de todos los formatos que es capaz de gestionar la
+            caja de texto
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.SpacedAlphaNumeric">
+            <summary>
+            Todos los caracteres y números con espacios. Valor por
+            defecto de la propiedad Format
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.NoSpacedAlphaNumeric">
+            <summary>
+            Todos los caracteres y números sin espacios
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.SpacedAlphabetic">
+            <summary>
+            Sólo las letras con espacios
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.NoSpacedAlphabetic">
+            <summary>
+            Sólo las letras sin espacios
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.UnsignedNumber">
+            <summary>
+            Sólo números enteros sin signo
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.SignedNumber">
+            <summary>
+            Sólo números enteros con signo
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.UnsignedFloatingPointNumber">
+            <summary>
+            Sólo números con coma decimal flotante sin signo
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.SignedFloatingPointNumber">
+            <summary>
+            Sólo números con coma decimal flotante con signo
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.UnsignedFixedPointNumber">
+            <summary>
+            Sólo números con coma decimal fija sin signo. El número
+            de decimales se debe especificar en la propiedad Decimals
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.SignedFixedPointNumber">
+            <summary>
+            Sólo números con coma decimal fija con signo. El número
+            de decimales se debe especificar en la propiedad Decimals
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.HexadecNumber">
+            <summary>
+            Sólo números en formato hexadecimal
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.OctalNumber">
+            <summary>
+            Sólo números en formato octal
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.BynaryNumber">
+            <summary>
+            Sólo números en formato binario
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.tbFormats.UserDefined">
+            <summary>
+            Definido por usuario
+            </summary>
+        </member>
+        <member name="T:TextBoxConFormato.FormattedTextBox">
+            <summary>
+            Caja de texto que permite el control automáto del formato
+            de entrada del texto
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.FormattedTextBox.format">
+            <summary>
+            Almacena el valor de la propiedad Format
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.FormattedTextBox.ControlKeys">
+            <summary>
+            Mete las teclas TAB, RETORNO e INTRO en la cadena - ControlKeys para aceptar siempre estas teclas
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.FormattedTextBox.userValues">
+            <summary>
+            Almacena el valor de la propiedad UserValues
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.FormattedTextBox.decSeparator">
+            <summary>
+            Almacena el valor de la propiedad DecSeparator
+            </summary>
+        </member>
+        <member name="F:TextBoxConFormato.FormattedTextBox.decimals">
+            <summary>
+            Almacena el valor de la propiedad Decimals
+            </summary>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.#ctor">
+            <summary>
+            Formato TextBox
+            </summary>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén utilizando.
+            </summary>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador, no se puede modificar
+            el contenido del método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.Validar(System.Windows.Forms.Message@)">
+             <summary>
+             Valida el mensaje WM_CHAR recibido desde WndProc.
+             </summary>
+            
+             <param name="m">
+             Mensaje WM_CHAR recibido en WndProc
+             </param>
+            
+             <returns>
+             true si la pulsación es válida
+             false si la pulsación no es válida
+             </returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.EsFormatoDecimal">
+             <summary>
+             Comprueba si el formato actual es de algún tipo de
+             número decimal
+             </summary>
+            
+             <returns>
+             true si el formato es decimal
+             false si el formato no es decimal
+             </returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ComprobarComa(System.String@)">
+             <summary>
+             Comprueba si se puede poner la coma con un formato
+             de número decimal
+             </summary>
+            
+             <param name="values">
+             Cadena con los dígitos aceptados para el formato. Si
+             se puede poner el separador decimal, el método lo añade
+             a values, que se pasa por referencia
+             </param>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ComprobarSigno(System.String@)">
+             <summary>
+             Comprueba si se puede poner el singo en un formato
+             numérico según la posición del cursor
+             </summary>
+            
+             <param name="values">
+             Cadena con los dígitos aceptados para el formato. Si
+             se puede poner el signo, el método lo añade
+             a values, que se pasa por referencia
+             </param>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ComprobarPosicion(System.String@)">
+             <summary>
+             Comprueba si se puede seguir escribiendo números en un
+             formato FixedPointNumber según la posición del cursor
+             </summary>
+            
+             <param name="values">
+             Cadena con los dígitos aceptados para el formato. Si
+             se puede poner un número, el método los añade
+             a values, que se pasa por referencia
+             </param>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ActualizarSeparador">
+            <summary>
+            Actualiza el separador decimal en el texto ya escrito
+            </summary>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.BaseADecimal(System.Int32)">
+             <summary>
+             Cambia a base decimal un número escrito en cualquier base
+             </summary>
+            
+             <param name="Base">
+             Base en la que está escrito el número
+             </param>
+            
+             <returns>
+             El número en base decimal como tipo long
+             </returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.DecimalABase(System.Int64,System.Int32)">
+             <summary>
+             Cambia a cualquier base un número escrito en base decimal
+             </summary>
+            
+             <param name="num">
+             número que hay que cambiar
+             </param>
+            
+             <param name="Base">
+             base a la que hay que cambiar
+             </param>
+            
+             <returns>
+             cadena con el número en la nueva base
+             </returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.WndProc(System.Windows.Forms.Message@)">
+             <summary>
+             Este el el método que procesa los mensajes de Windows
+             para el control. Aquí es donde se valida que dicho
+             mensaje sea válido según el formato. La pulsación se
+             enviará al control solamente cuando se efectúe la
+             llamada al WndProc de la clase base, que es el que
+             realmente enviará el mensaje al control. En caso de
+             no hacer la llamada, será como si nunca se hubiera
+             pulsado esa tecla, puesto que no se procesa.
+            
+             Si la pulsación no es válida no se produce el evento
+             KeyPress. Si, a pesar de todo queremos que sí se
+             produzca el evento habría que sobreescribir el método
+             DefWndProc, en lugar de WndProc
+             </summary>
+            
+             <param name="m">
+             mensaje que recibe del sistema operativo
+             </param>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ToDouble">
+            <summary>
+            Devuelve la cadena de la propiedad Text como un valor
+            de tipo double siempre que sea posible. En caso de que
+            dicha cadena no se reconozca como un número devolverá 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ToInt64">
+            <summary>
+            Devuelve la cadena de la propiedad Text como un valor
+            de tipo long siempre que sea posible. En caso de que
+            la cadena no se reconozca como un número devolverá 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ToOctal">
+            <summary>
+            Devuelve una cadena con el número contenido en la
+            propiedad Text en formato Octal. En caso de que la
+            cadena no se reconozca como un número delvolverá 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ToHexadecimal">
+            <summary>
+            Devuelve una cadena con el número contenido en la
+            propiedad Text en formato Hexadecimal. En caso de que la
+            cadena no se reconozca como un número delvolverá 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TextBoxConFormato.FormattedTextBox.ToBynary">
+            <summary>
+            Devuelve una cadena con el número contenido en la
+            propiedad Text en formato Binario. En caso de que la
+            cadena no se reconozca como un número delvolverá 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TextBoxConFormato.FormattedTextBox.Text">
+            <summary>
+            Devuelve o establece el texto del control
+            </summary>
+        </member>
+        <member name="P:TextBoxConFormato.FormattedTextBox.Decimals">
+            <summary>
+            Devuelve o establece el número de decimales para un
+            formato FixedPointNumber
+            </summary>
+        </member>
+        <member name="P:TextBoxConFormato.FormattedTextBox.DecSeparator">
+            <summary>
+            Devuelve o establece el carácter de separación decimal
+            </summary>
+        </member>
+        <member name="P:TextBoxConFormato.FormattedTextBox.Format">
+            <summary>
+            Devuelve o establece el formato de entrada en el TextBox
+            El texto que tuviera el cuadro de texto se modificará
+            para ajustarse al nuevo formato
+            </summary>
+        </member>
+        <member name="P:TextBoxConFormato.FormattedTextBox.UserValues">
+            <summary>
+            Devuelve o establece los dígitos válidos en el TextBox
+            cuando Format está establecido a UserDefined
+            </summary>
+        </member>
+    </members>
+</doc>

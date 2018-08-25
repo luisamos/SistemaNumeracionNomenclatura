@@ -1,0 +1,83 @@
+<LayerDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LayerDefinition-1.3.0.xsd" version="1.3.0">
+  <VectorLayerDefinition>
+    <ResourceId>Library://SqlServerSpatial.FeatureSource</ResourceId>
+    <FeatureName>dbo:VIAS</FeatureName>
+    <FeatureNameType>FeatureClass</FeatureNameType>
+    <Filter></Filter>
+    <Geometry>GEOM</Geometry>
+    <VectorScaleRange>
+      <LineTypeStyle>
+        <LineRule>
+          <LegendLabel>CON FICHA</LegendLabel>
+          <Filter>HASH &lt;&gt; &apos;&apos;</Filter>
+          <Label>
+            <Unit>Meters</Unit>
+            <SizeContext>MappingUnits</SizeContext>
+            <SizeX>0.3</SizeX>
+            <SizeY>3</SizeY>
+            <Rotation>0.0</Rotation>
+            <Text>CONCAT(CONCAT(CONCAT(CONCAT(SECTOR,CODIGO_VIA),CUADRA),&apos; - &apos;),DIRECCION)</Text>
+            <FontName>Calibri</FontName>
+            <ForegroundColor>FFF0E1C8</ForegroundColor>
+            <BackgroundColor>ffffffff</BackgroundColor>
+            <BackgroundStyle>Transparent</BackgroundStyle>
+            <VerticalAlignment>&apos;Bottom&apos;</VerticalAlignment>
+            <AdvancedPlacement>
+              <ScaleLimit>0</ScaleLimit>
+            </AdvancedPlacement>
+          </Label>
+          <LineSymbolization2D>
+            <LineStyle>Solid</LineStyle>
+            <Thickness>0.1</Thickness>
+            <Color>FFFFFF00</Color>
+            <Unit>Centimeters</Unit>
+            <SizeContext>DeviceUnits</SizeContext>
+          </LineSymbolization2D>
+        </LineRule>
+        <LineRule>
+          <LegendLabel>SIN FICHA</LegendLabel>
+          <Label>
+            <Unit>Meters</Unit>
+            <SizeContext>MappingUnits</SizeContext>
+            <SizeX>0.3</SizeX>
+            <SizeY>3</SizeY>
+            <Rotation>0.0</Rotation>
+            <Text>CONCAT(CONCAT(CONCAT(CONCAT(SECTOR,CODIGO_VIA),CUADRA),&apos; - &apos;),DIRECCION)</Text>
+            <FontName>Calibri</FontName>
+            <ForegroundColor>FFF0E1C8</ForegroundColor>
+            <BackgroundColor>ffffffff</BackgroundColor>
+            <BackgroundStyle>Transparent</BackgroundStyle>
+            <VerticalAlignment>&apos;Bottom&apos;</VerticalAlignment>
+            <AdvancedPlacement>
+              <ScaleLimit>0</ScaleLimit>
+            </AdvancedPlacement>
+          </Label>
+          <LineSymbolization2D>
+            <LineStyle>Solid</LineStyle>
+            <Thickness>0.1</Thickness>
+            <Color>FF640064</Color>
+            <Unit>Centimeters</Unit>
+            <SizeContext>DeviceUnits</SizeContext>
+          </LineSymbolization2D>
+        </LineRule>
+        <ShowInLegend>true</ShowInLegend>
+      </LineTypeStyle>
+      <AreaTypeStyle>
+        <AreaRule>
+          <LegendLabel></LegendLabel>
+          <AreaSymbolization2D>
+          </AreaSymbolization2D>
+        </AreaRule>
+        <ShowInLegend>false</ShowInLegend>
+      </AreaTypeStyle>
+      <PointTypeStyle>
+        <DisplayAsText>false</DisplayAsText>
+        <AllowOverpost>false</AllowOverpost>
+        <PointRule>
+          <LegendLabel></LegendLabel>
+        </PointRule>
+        <ShowInLegend>false</ShowInLegend>
+      </PointTypeStyle>
+    </VectorScaleRange>
+  </VectorLayerDefinition>
+</LayerDefinition>

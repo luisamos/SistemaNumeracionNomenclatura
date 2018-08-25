@@ -1,0 +1,21 @@
+<FeatureSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FeatureSource-1.0.0.xsd" version="1.0.0">
+  <Provider>OSGeo.SQLServerSpatial.3.4</Provider>
+  <Parameter>
+    <Name>Password</Name>
+    <Value></Value>
+  </Parameter>
+  <Parameter>
+    <Name>Service</Name>
+    <Value></Value>
+  </Parameter>
+  <Parameter>
+    <Name>Username</Name>
+    <Value></Value>
+  </Parameter>
+  <Parameter>
+    <Name>DataStore</Name>
+    <Value></Value>
+  </Parameter>
+  <ConfigurationDocument></ConfigurationDocument>
+  <LongTransaction></LongTransaction>
+</FeatureSource>

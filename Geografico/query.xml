@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<gpa>
+  <parametros ServidorBaseDatos="LUISAMOS-PC" BaseDatos="GEODB" Usuario="sa" Contraseña="luisamos" Departamento="08" Provincia="04" Distrito="01" ServidorWeb="127.0.0.1" Puerto="80"/>\
+</gpa>
